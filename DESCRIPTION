@@ -1,0 +1,30 @@
+Package: ChromatinFeaturespace
+Type: Package
+Title: Search for optimal collection of features among scATACseq samples
+Version: 0.9.0
+Author: Sami Kilpinen
+Maintainer: Sami Kilpinen <sami.kilpinen@helsinki.fi>
+Description: Search for optimal collection of features among scATAC samples
+    Given scATAC fragment and singlecell.csv files from n replicates (biological or technical)
+    it can be used to search for optimal feature space by finding cellular clades and performing
+    peak calling separately for each clade, and then merging peaks to form one common feature space.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Imports:
+    Seurat,
+    Signac,
+    common,
+    dendextend,
+    dplyr,
+    fpc,
+    proxy,
+    readr,
+    rlang,
+    ggplot2,
+    magrittr,
+    GenomeInfoDb,
+    stringr
+Suggests: 
+    BSgenome.Mmusculus.UCSC.mm10, BSgenome.Hsapiens.UCSC.hg19

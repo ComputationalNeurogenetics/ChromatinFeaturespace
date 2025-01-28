@@ -1,0 +1,6 @@
+clade.peaks_01_bedpe.qs filter=lfs diff=lfs merge=lfs -text
+clade.peaks_02_bed.qs filter=lfs diff=lfs merge=lfs -text
+clade.peaks_02_bedpe.qs filter=lfs diff=lfs merge=lfs -text
+*.qs filter=lfs diff=lfs merge=lfs -text
+*.Rsd filter=lfs diff=lfs merge=lfs -text
+*.Rds filter=lfs diff=lfs merge=lfs -text

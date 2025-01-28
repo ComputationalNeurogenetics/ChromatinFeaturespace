@@ -1,0 +1,7 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+images/.gitkeep
+^examples$
+^images$
+^metadata$
+^LICENSE\.md$
