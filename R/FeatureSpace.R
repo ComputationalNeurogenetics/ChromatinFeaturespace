@@ -66,8 +66,8 @@ FrequencyFilter <- function(data.object, min.cells=0.025, max.cells=0.975, min.f
   min.features.thr <- round(nrow(data.object)*min.features, digits = 0)
   max.features.thr <- round(nrow(data.object)*max.features, digits = 0)
 
-  cell.per.feature <- rowSums(Seurat::GetAssayData(data.object[["cladepeaks_"]])>0)
-  feature.per.cell <- colSums(Seurat::GetAssayData(data.object[["cladepeaks_"]])>0)
+  cell.per.feature <- SeuratObject::rowSums(Seurat::GetAssayData(data.object[["cladepeaks_"]])>0)
+  feature.per.cell <- SeuratObject::colSums(Seurat::GetAssayData(data.object[["cladepeaks_"]])>0)
 
   feature.filter.index <- which(cell.per.feature >= min.cells.thr & cell.per.feature <= max.cells.thr)
   cell.filter.index <- which(feature.per.cell >= min.features.thr & feature.per.cell <= max.features.thr)
